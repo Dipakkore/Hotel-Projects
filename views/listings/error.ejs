@@ -1,0 +1,17 @@
+<!-- <% layout("layouts/boilerplate") %>
+
+<div class="raw">
+  <div class="alert alert-primary " role="alert">
+    <p<%= err.message || "Something went wrong!" %>></p>
+  </div>
+</div> -->
+
+<% layout("layouts/boilerplate") %>
+
+<div class="container mt-5 text-center">
+  <h1 class="text-danger">⚠️ Error <%= err.statusCode || 500 %></h1>
+  <p class="lead"><%= err.message || "Something went wrong!" %></p>
+  <a href="/listings" class="btn btn-primary mt-3">Back to Listings</a>
+</div>
+
+
