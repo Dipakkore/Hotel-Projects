@@ -161,6 +161,11 @@ app.use((err, req, res, next) => {
 });
 
 
+app.get("/", (req, res) => {
+    res.redirect("/listings");
+});
+
+
 //  Start Server
 
 const port = process.env.PORT || 8080;
